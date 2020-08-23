@@ -12,8 +12,7 @@ var foobar = function() {
   var foo = 2;
 }
 
-foobar()
-
+foobar() // undefined
 
 
 
