@@ -35,6 +35,12 @@ console.log(testOne, testTwo, testThree);
 let newArr = ['a', 'b', ['c', 'd'], 'e', 'f', 'g'];
 
 let [ a, b, [c, d], ...others] = newArr;
-
 console.log(a, b ,c ,d, others);
 
+// variable swap
+let t1 = 't1',
+    t2 = 't2';
+console.log(t1 , t2);
+
+[t1, t2] = [t2, t1];
+console.log(t1 , t2);
