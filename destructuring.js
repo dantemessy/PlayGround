@@ -30,3 +30,11 @@ let testOne = 11, testTwo = 22, testThree = 33;
 // to skip element
 [testOne, , testThree] = arr;
 console.log(testOne, testTwo, testThree);
+
+// array of arrays
+let newArr = ['a', 'b', ['c', 'd']];
+
+let [ a, b, [c, d]] = newArr;
+
+console.log(a, b ,c ,d);
+
