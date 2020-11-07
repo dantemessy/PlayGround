@@ -44,3 +44,14 @@ console.log(t1 , t2);
 
 [t1, t2] = [t2, t1];
 console.log(t1 , t2);
+
+
+
+// Destructuring For Parameters
+let newObj = {first: 'f1', second: 'f2'};
+
+let newFun = ({first, second}) => {
+    console.log(first, second);
+}
+
+newFun(newObj);
