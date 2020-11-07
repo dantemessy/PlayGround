@@ -32,9 +32,9 @@ let testOne = 11, testTwo = 22, testThree = 33;
 console.log(testOne, testTwo, testThree);
 
 // array of arrays
-let newArr = ['a', 'b', ['c', 'd']];
+let newArr = ['a', 'b', ['c', 'd'], 'e', 'f', 'g'];
 
-let [ a, b, [c, d]] = newArr;
+let [ a, b, [c, d], ...others] = newArr;
 
-console.log(a, b ,c ,d);
+console.log(a, b ,c ,d, others);
 
