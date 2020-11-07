@@ -22,10 +22,11 @@ console.log(name, age);
 
 // Destructuring for Arrays
 let arr = [1, 2, 3];
-let [one, two, three] = arr;
-console.log(one, two, three);
+let [one, two, three, four='does not exist'] = arr;
+console.log(one, two, three, four);
 
 let testOne = 11, testTwo = 22, testThree = 33;
 
-[testOne, testTwo, testThree] = arr;
+// to skip element
+[testOne, , testThree] = arr;
 console.log(testOne, testTwo, testThree);
