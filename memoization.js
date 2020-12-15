@@ -3,6 +3,8 @@
 const memoize = fun => {
     const cache = new Map;
     return value => {
+      console.log("cache", cache)
+      console.log("value", value)
       if (cache.has(value)) return cache.get(value);
       cache.set(value, fun(value))
       return cache.get(value);
@@ -21,11 +23,11 @@ const memoize = fun => {
     return result;
   })
   
-  console.time("First Looper")
-  console.log("looper", looper(10000));
-  console.timeEnd("First Looper");
+  // console.time("First Looper")
+  // console.log("looper", looper(10000,222));
+  // console.timeEnd("First Looper");
   
-  console.time("with Memoize")
-  console.log("looper", looper(10000));
-  console.timeEnd("with Memoize");
+  // console.time("with Memoize")
+  // console.log("looper", looper(10000,222));
+  // console.timeEnd("with Memoize");
   
